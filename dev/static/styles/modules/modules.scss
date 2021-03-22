@@ -1,0 +1,134 @@
+@import "buttons/buttons";
+@import "footer/footer";
+@import "header/header";
+@import "main-nav/main-nav";
+@import "main-screen/main-screen";
+
+
+//all
+.title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -.01em;
+    color: #000000;
+}
+.descr {
+    font-family: 'Inter';
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+
+//supported
+.supported {
+    &__inner {
+        text-align: center;
+    }
+    .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__item {
+            span {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 32px;
+                color: #272727;
+            }
+        }
+    }
+}
+//what
+.what {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box {
+        width: 50%;
+    }
+    .title-slide {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 32px;
+        color: #272727;
+    }
+    .decrp-slide {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+        color: #272727;
+    }
+}
+
+.crypto {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .box {
+            width: 50%;
+        }
+    }
+}
+
+
+//become
+.become {
+    &__inner {
+        background: linear-gradient(90deg, #7FFAB7 -5.56%, #C4FC85 100%);
+        border-radius: 20px;
+        padding: 32px 38px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        height: 280px;
+
+        .box {
+            width: 50%;
+
+            .title {
+                margin-bottom: 18px;
+            }
+            .descr {
+                margin-bottom: 12px;
+                color: #0A0A0A;
+                opacity: 0.6;
+            }
+
+            &-img {
+                //background: url("../../static/images/sprite/png/become-phone.png")no-repeat  top center;
+                //width: 207px;
+                width: 38%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.dark {
+    background: #181818;
+    border-radius: 20px 20px 0 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $white;
+
+        .box {
+            width: 50%;
+        }
+    }
+}

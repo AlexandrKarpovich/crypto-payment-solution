@@ -1,0 +1,18 @@
+extends layout/main
+
+block variables
+	-var title = 'Главная страница'
+
+block content
+	//include pages/main-screen
+	.main.main-screen
+		.container
+			h1.main__title Crypto payment solution
+
+	include pages/crypto
+	include pages/how
+	include pages/what
+	include pages/become
+	include pages/supported
+
+	include pages/dark
