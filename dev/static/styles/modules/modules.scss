@@ -5,6 +5,10 @@
 @import "main-screen/main-screen";
 
 
+section {
+    margin-bottom: 150px;
+}
+
 //all
 .title {
     font-family: 'Montserrat';
@@ -14,71 +18,94 @@
     letter-spacing: -.01em;
     color: #000000;
 }
+.subtitle {
+    font-family: 'Manrope';
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+}
+
 .descr {
     font-family: 'Inter';
     font-weight: normal;
     font-size: 20px;
     line-height: 32px;
 }
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //flex-flow: row wrap;
+}
 
 
 //supported
 .supported {
-    &__inner {
+    .title {
         text-align: center;
+        margin-bottom: 64px;
     }
-    .box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &__item {
-            span {
-                font-family: 'Manrope';
-                font-style: normal;
-                font-weight: bold;
-                font-size: 28px;
-                line-height: 32px;
-                color: #272727;
+
+    .item {
+
+        .subtitle {
+            color: #272727;
+            margin-top: 24px;
+        }
+
+        svg {
+            width: 128px;
+            height: 128px;
+            fill: #ffff;
+        }
+        .icon {
+            &-bitcoin {
+                background: linear-gradient(42.31deg, #EE6429 2.73%, #F3A173 96.33%), #C4C4C4;
+                box-shadow: inset 0px 0px 12px rgba(255, 255, 255, 0.4);
+                border-radius: 24px;
+            }
+            &-ethereum {
+                background: linear-gradient(37.8deg, #8866D2 12.43%, #C594F5 93.78%), #C4C4C4;
+                box-shadow: inset 0px 0px 12px rgba(255, 255, 255, 0.4);
+                border-radius: 20px;
+            }
+            &-tether {
+                background: linear-gradient(220.92deg, #42ECAF 4.94%, #2AC584 95.2%), #C4C4C4;
+                box-shadow: inset 0px 0px 12px rgba(255, 255, 255, 0.4);
+                border-radius: 20px;
             }
         }
     }
 }
 //what
 .what {
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
     .box {
         width: 50%;
     }
-    .title-slide {
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 28px;
-        line-height: 32px;
-        color: #272727;
+    .title {
+        margin-bottom: 50px;
     }
-    .decrp-slide {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 32px;
+    .subtitle {
         color: #272727;
+        margin-bottom: 18px;
+    }
+    .descr {
+        color: #272727;
+        margin-bottom: 28px;
     }
 }
 
 .crypto {
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
+    .row {
         .box {
             width: 50%;
+
+            .title {
+                margin-bottom: 24px;
+            }
+            .descr {
+                margin-bottom: 28px;
+            }
         }
     }
 }
@@ -86,13 +113,12 @@
 
 //become
 .become {
-    &__inner {
+    .row {
         background: linear-gradient(90deg, #7FFAB7 -5.56%, #C4FC85 100%);
         border-radius: 20px;
         padding: 32px 38px;
         box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
+        align-items: flex-start;
         overflow: hidden;
         height: 280px;
 
@@ -108,27 +134,58 @@
                 opacity: 0.6;
             }
 
-            &-img {
+            &__img {
                 //background: url("../../static/images/sprite/png/become-phone.png")no-repeat  top center;
                 //width: 207px;
-                width: 38%;
+                width: 291px;
                 margin: auto;
             }
         }
     }
 }
 
+.partners {
+    
+}
+
+.why {
+    .row {
+        flex-flow: wrap;
+        .item {
+            flex: 1;
+        }
+    }
+}
+.payment {
+    .row {
+        flex-flow: wrap;
+    }
+}
+
 .dark {
     background: #181818;
     border-radius: 20px 20px 0 0;
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    margin: 0;
+    padding: 0;
+    .row {
         color: $white;
+        padding: 91px 0 42px;
 
         .box {
             width: 50%;
+
+            .title {
+                color: $white;
+                margin-bottom: 18px;
+            }
+            .descr {
+                margin-bottom: 18px;
+            }
+
+            &__img {
+                width: 559px;
+                //height: 389px;
+            }
         }
     }
 }
