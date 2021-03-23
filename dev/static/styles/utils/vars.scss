@@ -15,3 +15,15 @@ $desktop: 1280;
 $content: 1000px;
 
 // Fonts
+
+//@include respond-to('tablet') {
+
+//}
+
+$breakpoints: (
+    "mobile": 320px,
+    "mobile-small": 380px,
+    "mobile-wide": 580px,
+    "tablet": 768px,
+    "desktop": 992px,
+);
