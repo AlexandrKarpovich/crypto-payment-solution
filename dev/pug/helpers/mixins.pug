@@ -6,11 +6,6 @@ mixin icon(name,mod)
 		svg(class="svg-sprite-icon icon-" + name)
 			use(xlink:href="static/images/sprite/symbol/sprite.svg#" + name)
 
-//mixin btn(link,mod)
-//	if(mod)
-//		div(class="mod")
-//			svg(class="svg-sprite-icon icon-" + name + ' ' + mod)
-//			a.btn__link(href="#")
 
 mixin btn(href, name)
 	//- attributes == {class: "btn"}
