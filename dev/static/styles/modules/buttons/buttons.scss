@@ -2,6 +2,12 @@
     display: inline-flex;
     padding: 12px 20px;
     border-radius: 8px;
+    transition: ease-out .3s;
+
+    &:hover {
+        box-shadow: 0  4px 16px rgba(0, 0, 0, .24);
+    }
+
     &__link {
         color: $white;
         font-style: normal;
@@ -10,10 +16,12 @@
         line-height: 24px;
         letter-spacing: .01em;
     }
+
     &-black {
-        background: #0A0A0A;
+        background: #0a0a0a;
     }
+
     &-blue {
-        background: #277FE8;
+        background: #277fe8;
     }
 }

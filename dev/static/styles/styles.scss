@@ -64,7 +64,10 @@ button { outline: none; }
   height: 100%;
 }
 
-.content { flex: 1 0 auto; }
+.content {
+  flex: 1 0 auto;
+  padding-top: 73px;
+}
 
 .container {
   margin: 0 auto;
