@@ -73,7 +73,6 @@ button { outline: none; }
   margin: 0 auto;
   max-width: $content;
   width: 100%;
-  max-width: 928px;
   @include respond-to('mobile-wide') {
     padding: 0 20px;
     box-sizing: border-box;
