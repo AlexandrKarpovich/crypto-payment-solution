@@ -8,6 +8,9 @@ footer { flex: 0 0 auto; }
         @include respond-to('mobile-wide') {
             padding: 0 40px 40px;
         }
+        @include respond-to('mobile-small') {
+            padding: 0 20px 20px;
+        }
     }
 
     &__inner {
@@ -69,7 +72,9 @@ footer { flex: 0 0 auto; }
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 20px;
-                color: $white;
+                letter-spacing: 0.01em;
+                color: rgba(255, 255, 255, 0.8);
+
             }
         }
     }
