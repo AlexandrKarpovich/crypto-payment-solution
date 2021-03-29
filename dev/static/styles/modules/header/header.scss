@@ -25,7 +25,14 @@ header {
         align-items: center;
         max-width: 364px;
         width: 100%;
+        @include respond-to('mobile-wide') {
+            width: auto;
+        }
+
         &__item {
+            @include respond-to('mobile-wide') {
+                display: none;
+            }
             &__link {
                 font-family: 'Inter';
                 font-weight: 500;
@@ -33,6 +40,13 @@ header {
                 line-height: 20px;
                 color: #272727;
             }
+        }
+
+        .btn {
+            @include respond-to('mobile-wide') {
+                width: initial;
+            }
+
         }
     }
 }

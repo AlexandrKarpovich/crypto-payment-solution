@@ -4,6 +4,12 @@
     border-radius: 8px;
     transition: ease-out .3s;
 
+    @include respond-to('mobile-wide') {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    };
+
     &:hover {
         box-shadow: 0  4px 16px rgba(0, 0, 0, .24);
     }
@@ -15,6 +21,11 @@
         font-size: 16px;
         line-height: 24px;
         letter-spacing: .01em;
+
+        @include respond-to('mobile-wide') {
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
 
     &-black {

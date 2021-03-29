@@ -4,11 +4,9 @@ section.payment#2
         .row
             .item
                 .card
+                    img.card__img(src="./static/images/content/img-card.png" alt="")
                     ul.list
-                        .list__item
-                            .list__item_icon
-                                img(src="./static/images/content/img-card.png" alt="")
-                        .list__item
+                        li.list__item
                             .list__item_icon
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0)">
@@ -22,7 +20,19 @@ section.payment#2
                                 </defs>
                                 </svg>
                             .list__item_descr Bitcoin
-                        .list__item
+                            .check
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <circle cx="8.5" cy="8" r="8" fill="#15D590"/>
+                                <path d="M5.5 7.66667L7.79412 10L11.5 6" stroke="white" stroke-width="1.4"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="16" height="16" fill="white" transform="translate(0.5)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                        li.list__item
                             .list__item_icon
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0)">
@@ -36,7 +46,7 @@ section.payment#2
                                 </defs>
                                 </svg>
                             .list__item_descr Ethereum
-                        .list__item
+                        li.list__item
                             .list__item_icon
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0)">
@@ -50,9 +60,16 @@ section.payment#2
                                 </defs>
                                 </svg>
                             .list__item_descr Tether
-                        .list__item
-                            +btn('#', 'Pay')(class="btn btn-black")
+                    +btn('#', 'Pay')(class="btn btn-black")
                 .descr Система учитывет стоимость монеты, проверяет попадание в сеть, обменивает и выводит крипту на ваш кошелёк
+
+            .arrow
+                <svg width="54" height="46" viewBox="0 0 54 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 9.5L47.9545 9.5" stroke="#B9BCC9" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M52.75 8.20096C53.75 8.77831 53.75 10.2217 52.75 10.799L44.5 15.5622C43.5 16.1395 42.25 15.4178 42.25 14.2631L42.25 4.73686C42.25 3.58216 43.5 2.86047 44.5 3.43782L52.75 8.20096Z" fill="#B9BCC9" stroke="#B9BCC9"/>
+                    <path d="M52.5 36.5L6.04546 36.5" stroke="#B9BCC9" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M1.25 35.201C0.250002 35.7783 0.250002 37.2217 1.25 37.799L9.5 42.5622C10.5 43.1395 11.75 42.4178 11.75 41.2631L11.75 31.7369C11.75 30.5822 10.5 29.8605 9.5 30.4378L1.25 35.201Z" fill="#B9BCC9" stroke="#B9BCC9"/>
+                </svg>
 
             .item
                 .card
@@ -67,41 +84,45 @@ section.payment#2
                         .list__item
                             .list__item_icon
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="24" height="24" transform="translate(0.5)" fill="white"/>
-                                <path d="M15.5 12L20.5 8L15.5 4V6.999H2.5V8.999H15.5V12ZM22.5 15H9.5V12L4.5 16L9.5 20V17H22.5V15Z" fill="#15D590"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.49 2C6.97 2 2.5 6.48 2.5 12C2.5 17.52 6.97 22 12.49 22C18.02 22 22.5 17.52 22.5 12C22.5 6.48 18.02 2 12.49 2ZM13.5 13V7H11.5V13H13.5ZM13.5 17V15H11.5V17H13.5ZM4.5 12C4.5 16.42 8.08 20 12.5 20C16.92 20 20.5 16.42 20.5 12C20.5 7.58 16.92 4 12.5 4C8.08 4 4.5 7.58 4.5 12Z" fill="#15D590"/>
                                 </svg>
                             .list__item_descr Risk engine
                         .list__item
                             .list__item_icon
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="24" height="24" transform="translate(0.5)" fill="white"/>
-                                <path d="M15.5 12L20.5 8L15.5 4V6.999H2.5V8.999H15.5V12ZM22.5 15H9.5V12L4.5 16L9.5 20V17H22.5V15Z" fill="#15D590"/>
+                                    <path d="M18.5 8C17.4 8 16.5 8.9 16.5 10C16.5 11.1 17.4 12 18.5 12C19.6 12 20.5 11.1 20.5 10C20.5 8.9 19.6 8 18.5 8Z" fill="#15D590"/>
+                                    <path d="M6.5 12C5.4 12 4.5 12.9 4.5 14C4.5 15.1 5.4 16 6.5 16C7.6 16 8.5 15.1 8.5 14C8.5 12.9 7.6 12 6.5 12Z" fill="#15D590"/>
+                                    <path d="M10.5 12C10.5 10.9 11.4 10 12.5 10C13.6 10 14.5 10.9 14.5 12C14.5 13.1 13.6 14 12.5 14C11.4 14 10.5 13.1 10.5 12Z" fill="#15D590"/>
                                 </svg>
                             .list__item_descr Processor
                         .list__item
                             .list__item_icon
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="24" height="24" transform="translate(0.5)" fill="white"/>
-                                <path d="M15.5 12L20.5 8L15.5 4V6.999H2.5V8.999H15.5V12ZM22.5 15H9.5V12L4.5 16L9.5 20V17H22.5V15Z" fill="#15D590"/>
+                                    <path d="M11.5 2L11.5 14.17L7.91 10.59L6.5 12L12.5 18L18.5 12L17.09 10.59L13.5 14.17L13.5 2H11.5Z" fill="#15D590"/>
+                                    <path d="M5.5 20H19.5V22H5.5V20Z" fill="#15D590"/>
                                 </svg>
                             .list__item_descr Add funds
                         .list__item
                             .list__item_icon
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="24" height="24" transform="translate(0.5)" fill="white"/>
-                                <path d="M15.5 12L20.5 8L15.5 4V6.999H2.5V8.999H15.5V12ZM22.5 15H9.5V12L4.5 16L9.5 20V17H22.5V15Z" fill="#15D590"/>
+                                    <path d="M11.5 18L11.5 5.83L7.91 9.41L6.5 8L12.5 2L18.5 8L17.09 9.41L13.5 5.83L13.5 18H11.5Z" fill="#15D590"/>
+                                    <path d="M5.5 20H19.5V22H5.5V20Z" fill="#15D590"/>
                                 </svg>
                             .list__item_descr Withdrawal
                         .list__item
                             .list__item_icon
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="24" height="24" transform="translate(0.5)" fill="white"/>
-                                <path d="M15.5 12L20.5 8L15.5 4V6.999H2.5V8.999H15.5V12ZM22.5 15H9.5V12L4.5 16L9.5 20V17H22.5V15Z" fill="#15D590"/>
+                                    <path d="M20.437 8.68C20.426 8.648 20.417 8.617 20.404 8.586C20.355 8.48 20.294 8.379 20.208 8.293L14.208 2.293C14.122 2.207 14.021 2.146 13.915 2.097C13.885 2.083 13.853 2.075 13.821 2.064C13.737 2.036 13.651 2.018 13.562 2.013C13.54 2.011 13.521 2 13.5 2H6.5C5.397 2 4.5 2.897 4.5 4V20C4.5 21.103 5.397 22 6.5 22H18.5C19.603 22 20.5 21.103 20.5 20V9C20.5 8.979 20.489 8.96 20.487 8.938C20.482 8.85 20.465 8.764 20.437 8.68ZM17.086 8H14.5V5.414L17.086 8ZM6.5 20V4H12.5V9C12.5 9.553 12.947 10 13.5 10H18.5L18.502 20H6.5Z" fill="#15D590"/>
                                 </svg>
                             .list__item_descr Invoices
                 .descr Система учитывет стоимость монеты, проверяет попадание в сеть, обменивает и выводит крипту на ваш кошелёк
-
-
+            .arrow
+                <svg width="54" height="46" viewBox="0 0 54 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 9.5L47.9545 9.5" stroke="#B9BCC9" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M52.75 8.20096C53.75 8.77831 53.75 10.2217 52.75 10.799L44.5 15.5622C43.5 16.1395 42.25 15.4178 42.25 14.2631L42.25 4.73686C42.25 3.58216 43.5 2.86047 44.5 3.43782L52.75 8.20096Z" fill="#B9BCC9" stroke="#B9BCC9"/>
+                    <path d="M52.5 36.5L6.04546 36.5" stroke="#B9BCC9" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M1.25 35.201C0.250002 35.7783 0.250002 37.2217 1.25 37.799L9.5 42.5622C10.5 43.1395 11.75 42.4178 11.75 41.2631L11.75 31.7369C11.75 30.5822 10.5 29.8605 9.5 30.4378L1.25 35.201Z" fill="#B9BCC9" stroke="#B9BCC9"/>
+                </svg>
             .item
                 .card
                     ul.list

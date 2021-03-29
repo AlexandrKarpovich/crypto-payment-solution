@@ -4,15 +4,29 @@ footer { flex: 0 0 auto; }
     margin: 0;
     padding: 0;
 
+    .container {
+        @include respond-to('mobile-wide') {
+            padding: 0 40px 40px;
+        }
+    }
+
     &__inner {
         color: $white;
         border-top: 1px solid rgba(255, 255, 255, .2);
         padding: 28px 32px 60px;
+
+        @include respond-to('mobile-wide') {
+            padding:  20px 0 0;
+        }
     }
     .row {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include respond-to('mobile-wide') {
+            flex-wrap: wrap-reverse;
+        }
     }
 
     .logo {
@@ -23,6 +37,10 @@ footer { flex: 0 0 auto; }
             svg path {
                 fill: #EDC041;
             }
+        }
+
+        @include respond-to('mobile-wide') {
+            margin-bottom: 40px;
         }
     }
 
@@ -38,7 +56,14 @@ footer { flex: 0 0 auto; }
         align-items: center;
         max-width: 494px;
         width: 100%;
+        @include respond-to('mobile-wide') {
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
         &__item {
+            @include respond-to('mobile-wide') {
+                width: 100%;
+            }
             &__link {
                 font-family: 'Inter';
                 font-weight: 500;
