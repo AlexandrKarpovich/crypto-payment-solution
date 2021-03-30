@@ -1012,6 +1012,7 @@ section {
 
 .what .box__img {
     width: 50%;
+    max-width: 448px;
 }
 
 .what .box__text .slider {
@@ -1021,7 +1022,7 @@ section {
 
 @media (max-width: 580px) {
     .what .box {
-        width: 100%;
+        width: 100% !important;
     }
 }
 
@@ -1980,18 +1981,19 @@ section {
     height: 42px;
     border: 2px solid #D7DCEA;
     border-radius: 50%;
-    background: transparent;
+    /*background: transparent;*/
     cursor: pointer;
 }
+
 .slider .slick-arrow.slick-prev{
     right: 61px;
-    background: url('../images/arrow-slider.svg') center no-repeat;
-    background-size: contain;
+    background: #fff url('../images/arrow-slider.svg') center no-repeat;
 }
 .slider .slick-arrow.slick-next{
     right: 0;
-    background: url('../images/arrow-slider.svg') center no-repeat;
-    background-size: contain;
+    background: #fff url('../images/arrow-slider-active.svg') center no-repeat;
+    /*transform: rotate( 180deg );*/
+    border: 2px solid #15D590;
 }
 .slider .slick-arrow.slick-disabled{
     opacity: 0.2;
