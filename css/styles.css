@@ -646,6 +646,7 @@ header {
     position: absolute;
     margin-top: 24px;
     padding: 0 32px;
+    z-index: 5;
 }
 
 .header__inner {
@@ -1150,7 +1151,6 @@ section {
     width: 291px;
     position: absolute;
     right: 10%;
-    width: 291px;
     left: 65%;
 }
 
@@ -1187,7 +1187,9 @@ section {
         width: 300px;
     }
 }
-
+.partners .row {
+    align-items: stretch;
+}
 .partners .title {
     text-align: center;
     margin-bottom: 40px;
@@ -1277,7 +1279,7 @@ section {
 }
 
 .why .row {
-    max-width: 992px;
+    /*max-width: 992px;*/
     width: 100%;
     margin: auto;
     -ms-flex-flow: wrap;
@@ -1298,9 +1300,9 @@ section {
 
 .why .row .item {
     text-align: center;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 29.2%;
-    flex: 0 0 29.2%;
+    /*-webkit-box-flex: 0;*/
+    /*-ms-flex: 0 0 29.2%;*/
+    /*flex: 0 0 29.2%;*/
     margin: 17px 16px;
     -webkit-box-shadow: 0 4px 40px rgba(0, 0, 0, 0.08);
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.08);
@@ -1311,7 +1313,7 @@ section {
     -webkit-transition: all linear .4s;
     -o-transition: all linear .4s;
     transition: all linear .4s;
-    max-width: 288px;
+    /*max-width: 288px;*/
     min-height: 264px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1322,14 +1324,16 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    width: 29%;
 }
 
 @media (max-width: 580px) {
     .why .row .item {
-        -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-        flex: 100%;
+        /*-webkit-box-flex: 100%;*/
+        /*-ms-flex: 100%;*/
+        /*flex: 100%;*/
         max-width: 100%;
+        width: 100%;
         margin: 0;
         min-height: auto;
         border-bottom: 1px solid #E6E6E6;
@@ -1348,11 +1352,11 @@ section {
     -webkit-box-shadow: 0 12px 64px rgba(0, 0, 0, 0.16);
     box-shadow: 0 12px 64px rgba(0, 0, 0, 0.16);
     border-radius: 21.2121px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 30%;
-    flex: 0 0 30%;
-    max-width: 305.45px;
-    max-height: 280px;
+    /*-webkit-box-flex: 0;*/
+    /*-ms-flex: 0 0 30%;*/
+    /*flex: 0 0 30%;*/
+    /*max-width: 305.45px;*/
+    /*max-height: 280px;*/
 }
 
 @media (max-width: 580px) {

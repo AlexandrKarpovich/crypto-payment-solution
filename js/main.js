@@ -9,3 +9,17 @@ $(document).ready(function(){
     });
 });
 
+$(document).on('click', '.menu__item__link', function (event) {
+    event.preventDefault();
+
+    let scrollTo = $(this).attr('href');
+
+    if (scrollTo !== '#') {
+        $("html, body").animate(
+            {
+                scrollTop: $(scrollTo).offset().top,
+            },
+            1000
+        );
+    }
+});
