@@ -1156,7 +1156,7 @@ section {
 
 @media (max-width: 580px) {
     .become .row .box__img {
-        max-width: 166px;
+        max-width: 150px;
         margin: auto;
         width: 100%;
         display: -webkit-box;
